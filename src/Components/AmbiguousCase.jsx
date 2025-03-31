@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./AmbiguousCase.css";
 
 const AmbiguousCase = () => {
     const [angle, setAngle] = useState("");

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./Polynomial.css";
 
 const PolynomialFormula = () => {
     const [coefficients, setCoefficients] = useState("");
@@ -63,53 +63,19 @@ const PolynomialFormula = () => {
             <label>Polynomial Function</label>
             <br />
             <label>Coefficients</label>
-            <input
-                type="text"
-                name="poly-coeff"
-                id="poly-coeff"
-                value={coefficients}
-                onChange={(e) => setCoefficients(e.target.value)}
-                required
-            />
+            <input type="text" name="poly-coeff" id="poly-coeff" value={coefficients} onChange={(e) => setCoefficients(e.target.value)} required/>
             <br />
             <label>Exponents</label>
-            <input
-                type="text"
-                name="poly-expo"
-                id="poly-expo"
-                value={exponents}
-                onChange={(e) => setExponents(e.target.value)}
-                required
-            />
+            <input type="text" name="poly-expo" id="poly-expo" value={exponents} onChange={(e) => setExponents(e.target.value)} required/>
             <br />
             <label>X Value</label>
-            <input
-                type="number"
-                name="poly-value"
-                id="poly-value"
-                step="0.001"
-                value={xValue}
-                onChange={(e) => setXValue(e.target.value)}
-                required
-            />
+            <input type="number" name="poly-value" id="poly-value" step="0.001" value={xValue} onChange={(e) => setXValue(e.target.value)} required />
             <br />
             <label>Polynomial Function (Result)</label>
-            <input
-                type="text"
-                name="poly-fxn"
-                id="poly-fxn"
-                value={polynomialString}
-                readOnly
-            />
+            <input type="text" name="poly-fxn" id="poly-fxn" value={polynomialString} readOnly />
             <br />
             <label>Polynomial Evaluation</label>
-            <input
-                type="text"
-                name="poly-result"
-                id="poly-result"
-                value={result}
-                readOnly
-            />
+            <input type="text" name="poly-result" id="poly-result" value={result} readOnly />
             <br />
             <input type="submit" value="Calculate" />
         </form>

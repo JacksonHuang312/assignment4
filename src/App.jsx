@@ -1,8 +1,8 @@
-import React from 'react';
 import HeronsFormula from "./Components/HeronsFormula";
 import AmbiguousCase from "./Components/AmbiguousCase";
 import NewtonsMethod from './Components/NewtonsMethod';
 import PolynomialFormula from './Components/Polynomial';
+import './App.css'
 
 const App = () => {
   return (

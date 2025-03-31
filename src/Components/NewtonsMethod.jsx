@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./NewtonsMethod.css";
 
 const NewtonsMethod = () => {
     const [guess, setGuess] = useState("");
@@ -36,27 +36,11 @@ const NewtonsMethod = () => {
             <br />
 
             <label>Root Guess</label>
-            <input
-                type="number"
-                name="root-guess"
-                id="root-guess"
-                step="0.001"
-                value={guess}
-                onChange={(e) => setGuess(e.target.value)}
-                required
-            />
+            <input type="number" name="root-guess" id="root-guess" step="0.001" value={guess} onChange={(e) => setGuess(e.target.value)} required/>
             <br />
-
             <label>Root Approximation</label>
-            <input
-                type="number"
-                name="root-result"
-                id="root-result"
-                value={result}
-                readOnly
-            />
+            <input type="number" name="root-result" id="root-result" value={result} readOnly/>
             <br />
-
             <input type="submit" value="Calculate" />
         </form>
     );

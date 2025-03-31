@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./HeronsFormula.css";
 
 const HeronsFormula = () => {
     const [a, setA] = useState("");
@@ -30,44 +30,18 @@ const HeronsFormula = () => {
         <form id="heron-form" onSubmit={handleSubmit}>
             <label>Heron's Formula</label>
             <br />
-
             <label>Side A</label>
-            <input
-                type="number"
-                name="heron-a"
-                value={a}
-                onChange={(e) => setA(e.target.value)}
-                step="0.001"
-                required
-            />
+            <input type="number" name="heron-a" value={a} onChange={(e) => setA(e.target.value)} step="0.001" required />
             <br />
-
             <label>Side B</label>
-            <input
-                type="number"
-                name="heron-b"
-                value={b}
-                onChange={(e) => setB(e.target.value)}
-                step="0.001"
-                required
-            />
+            <input type="number" name="heron-b" value={b} onChange={(e) => setB(e.target.value)} step="0.001" required />
             <br />
-
             <label>Side C</label>
-            <input
-                type="number"
-                name="heron-c"
-                value={c}
-                onChange={(e) => setC(e.target.value)}
-                step="0.001"
-                required
-            />
+            <input type="number" name="heron-c" value={c} onChange={(e) => setC(e.target.value)} step="0.001" required />
             <br />
-
             <label>Result</label>
             <input type="text" name="heron-result" value={result} readOnly />
             <br />
-
             <input type="submit" value="Calculate" />
         </form>
     );

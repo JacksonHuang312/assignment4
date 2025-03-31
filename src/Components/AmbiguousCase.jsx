@@ -9,9 +9,9 @@ const AmbiguousCase = () => {
 
     const ambiguousCase = (a, b, angle) => {
         if (angle == 90) return "Right Triangle";
-        
+
         const h = Math.round(b * Math.sin(angle * Math.PI / 180));
-        
+
         if (angle < 90) {
             if (a < h) return "No Triangle";
             if (a > b) return "One Triangle";
@@ -28,7 +28,7 @@ const AmbiguousCase = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        
+
         const numA = parseFloat(a);
         const numB = parseFloat(b);
         const numAngle = parseFloat(angle);

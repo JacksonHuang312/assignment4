@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css"; 
+import "./style.css";
 
 const PolynomialFormula = () => {
     const [coefficients, setCoefficients] = useState("");
@@ -55,7 +55,7 @@ const PolynomialFormula = () => {
         const { polynomialString, result } = polynomial(coeffArray, expoArray, parseFloat(xValue));
 
         setPolynomialString(polynomialString);
-        setResult(result.toFixed(3)); 
+        setResult(result.toFixed(3));
     };
 
     return (

@@ -29,7 +29,7 @@ const HeronsFormula = () => {
     return (
         <form id="heron-form" onSubmit={handleSubmit}>
             <label>Heron's Formula</label>
-            <br/>
+            <br />
 
             <label>Side A</label>
             <input
@@ -40,7 +40,7 @@ const HeronsFormula = () => {
                 step="0.001"
                 required
             />
-            <br/>
+            <br />
 
             <label>Side B</label>
             <input
@@ -51,7 +51,7 @@ const HeronsFormula = () => {
                 step="0.001"
                 required
             />
-            <br/>
+            <br />
 
             <label>Side C</label>
             <input
@@ -62,11 +62,11 @@ const HeronsFormula = () => {
                 step="0.001"
                 required
             />
-            <br/>
+            <br />
 
             <label>Result</label>
             <input type="text" name="heron-result" value={result} readOnly />
-            <br/>
+            <br />
 
             <input type="submit" value="Calculate" />
         </form>

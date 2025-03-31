@@ -20,11 +20,11 @@ const NewtonsMethod = () => {
         let newResult = currentGuess;
         let nextResult = approximation(newResult);
 
-        
+
         while (Math.abs(nextResult - newResult) > 0.001) {
             newResult = nextResult;
             nextResult = approximation(newResult);
-            nextResult = Math.round(nextResult * 1000) / 1000;  
+            nextResult = Math.round(nextResult * 1000) / 1000;
         }
 
         setResult(nextResult);

@@ -20,13 +20,11 @@ const NewtonsMethod = () => {
         let newResult = currentGuess;
         let nextResult = approximation(newResult);
 
-
         while (Math.abs(nextResult - newResult) > 0.001) {
             newResult = nextResult;
             nextResult = approximation(newResult);
             nextResult = Math.round(nextResult * 1000) / 1000;
         }
-
         setResult(nextResult);
     };
 
@@ -34,12 +32,11 @@ const NewtonsMethod = () => {
         <form id="newton-form" onSubmit={handleSubmit}>
             <label>Newtons Method</label>
             <br />
-
             <label>Root Guess</label>
-            <input type="number" name="root-guess" id="root-guess" step="0.001" value={guess} onChange={(e) => setGuess(e.target.value)} required/>
+            <input type="number" name="root-guess" id="root-guess" step="0.001" value={guess} onChange={(e) => setGuess(e.target.value)} required />
             <br />
             <label>Root Approximation</label>
-            <input type="number" name="root-result" id="root-result" value={result} readOnly/>
+            <input type="number" name="root-result" id="root-result" value={result} readOnly />
             <br />
             <input type="submit" value="Calculate" />
         </form>

@@ -63,10 +63,10 @@ const PolynomialFormula = () => {
             <label>Polynomial Function</label>
             <br />
             <label>Coefficients</label>
-            <input type="text" name="poly-coeff" id="poly-coeff" value={coefficients} onChange={(e) => setCoefficients(e.target.value)} required/>
+            <input type="text" name="poly-coeff" id="poly-coeff" value={coefficients} onChange={(e) => setCoefficients(e.target.value)} required />
             <br />
             <label>Exponents</label>
-            <input type="text" name="poly-expo" id="poly-expo" value={exponents} onChange={(e) => setExponents(e.target.value)} required/>
+            <input type="text" name="poly-expo" id="poly-expo" value={exponents} onChange={(e) => setExponents(e.target.value)} required />
             <br />
             <label>X Value</label>
             <input type="number" name="poly-value" id="poly-value" step="0.001" value={xValue} onChange={(e) => setXValue(e.target.value)} required />

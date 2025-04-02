@@ -44,10 +44,8 @@ const PolynomialFormula = () => {
             return;
         }
 
-        if (
-            coeffArray.some((c) => isNaN(parseFloat(c))) ||
-            expoArray.some((e) => isNaN(parseFloat(e)))
-        ) {
+        if (coeffArray.some((c) => isNaN(parseFloat(c))) ||
+            expoArray.some((e) => isNaN(parseFloat(e)))) {
             alert("Please enter only numeric values for coefficients and exponents.");
             return;
         }
